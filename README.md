@@ -27,3 +27,6 @@ This application allows users to generate JSON files for input into the AlphaFol
 2. Select regions, modifications, or ligands.
 3. Generate and download the JSON file.
 4. Upload the JSON to [AlphaFold3](https://golgi.sandbox.google.com/) for structure prediction.
+
+## Development
+Suggestions and bug reports are always welcome! use the Issues to report bug, functionality request or just say hi.
