@@ -106,8 +106,10 @@ def get_protein_features(protein_data, sequence_start, selected_sequence):
                 "residues": 'NAG(NAG(MAN(MAN(MAN)(MAN(MAN)(MAN)))))',
                 "position": adjusted_position
             }
-            glycans.append(glycan)
-            glycan_positions.add(adjusted_position)
+            if glycan not in glycans:
+                glycans.append(glycan)
+                glycan_positions.add(adjusted_position)
+                    
         elif feature['type'] == 'Modified residue':
             description = feature.get('description', '')
             if description in ptm_mapping:
